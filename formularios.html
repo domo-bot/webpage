@@ -15,10 +15,79 @@
                 <fieldset>
                     <legend>Ejemplos de input</legend>
                     <!--div divide los campos en diferentes grupos-->
+
+                    <!--lista desplegable-->
+                    <div>
+                        <label for="Carrera">Carrera:</label>
+                        <select name="Carrera" id="Carrera">
+                            <option value="4">LTI</option>
+                            <option value="5">LA</option>
+                            <option value="6">CP</option>
+                            <option value="7">LNI</option>
+                        </select>
+                    </div>
+
+                    <!--lista seleccion multiple-->
+                    <div>
+                        <label for="Carreramult">sel.carreras:</label>
+                        <select name="Carreramult" id="Carreramult" multiple>
+                            <option value="4">LTI</option>
+                            <option value="5">LA</option>
+                            <option value="6">CP</option>
+                            <option value="7">LNI</option>
+                        </select>
+                    </div>
+
+                    <!--lista grupos de opciones-->
+                    <div>
+                        <label for="carreragpo">sel.carreras:</label>
+                        <select name="carreragpo" id="carreragpo" multiple>
+                            <optgroup label="profesionales">
+                                <option value="4">LTI</option>
+                                <option value="5">LA</option>
+                                <option value="6">CP</option>
+                                <option value="7">LNI</option>
+                            </optgroup>
+                            <optgroup label="Tecnicas">
+                                <option value="15">Desarrollo de software</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <!--tienen que compartir nombre e id para que solo se seleccione un boton-->
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="genero">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="genero">
+                    </div>
+                    
+                    <!--Text box-->
+                    <div>
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <!--Data list-->
+                    <div>
+                        <label for="lenguaje">Lenguaje</label>
+                        <input type="text" name="lenguaje" id="lenguaje" list="lenguajes">
+                        <datalist id="lenguajes">
+                            <option value="python">
+                            <option value="visual basic">
+                            <option value="ruby">
+                            <option value="java">
+                            <option value="c++">
+                            <option value="c#">
+                            <option value="c">
+                        </datalist>
+                    </div>
+
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre">
                     </div>
+
                     <div>
                         <label for="casado">¿Es usted casado?</label>
                         <input type="checkbox" name="casado" id="casado">
